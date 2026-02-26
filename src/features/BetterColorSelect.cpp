@@ -668,6 +668,9 @@ class $modify(NewColorSelect, CustomizeObjectLayer) {
         this->gotoPage(CURRENT_PAGE);
         this->updateCustomColorLabels();
 
+        // no clue why this is necessary
+        m_mainLayer->getChildByID("detail-hsv-menu")->updateLayout();
+
         return true;
     }
 
